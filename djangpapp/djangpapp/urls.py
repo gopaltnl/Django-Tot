@@ -18,9 +18,19 @@ from django.urls import path
 
 from djtot import views
 
+from djtot import views as v
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.hello), 
     path('about/', views.abts), 
     path('image/',views.image),
+    path('login/',views.login),
+    path('register/',views.register),
+    path('arth/',views.arth),
+    path('regtask/',views.regtask),
+    path('table/<int:num>/',views.table),
+    path('task/',v.bttask),
+    path('details/<str:name>/<int:age>',views.myDetails),
+ 
 ]

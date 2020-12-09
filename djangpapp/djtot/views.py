@@ -14,3 +14,31 @@ def abts(r):
 
 def image(request):
 	return render(request,'home.html')
+
+def login(request):
+	return render(request,'login.html')	
+
+def register(request):
+	return render(request,'register.html')
+
+def regtask(request):
+	return render(request,'regtask.html')
+
+def arth(request):
+	return render(request,'arth.html')
+
+def table(request,num):
+	l = ""
+	for i in range(1,11):
+		v = num*i
+		l+=str(num)+"*"+str(i)+"="+str(v)+"<br>"
+	return HttpResponse(l)	
+
+def myhome(request,name,age):
+	return render(request,'myhome.html',{'n':name,'a':age})	
+
+def bttask(request):
+	return render(request,'boottask.html')
+
+def myDetails(k,name,age):
+	return render(k,'myhome.html',{'n':name,'a':age})
