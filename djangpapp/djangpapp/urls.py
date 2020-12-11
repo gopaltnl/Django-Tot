@@ -14,10 +14,8 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-
+from django.urls import path,include
 from djtot import views
-
 from djtot import views as v
 
 urlpatterns = [
@@ -32,5 +30,7 @@ urlpatterns = [
     path('table/<int:num>/',views.table),
     path('task/',v.bttask),
     path('details/<str:name>/<int:age>',views.myDetails),
+    
+    path('crud/',include('crud.urls')),
  
 ]
