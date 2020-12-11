@@ -13,3 +13,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> temp.save()
 >>> temp=Employee(empid='08',empname='anil',empsal=30000,empdept="skillapssdc")
 >>> temp.save()
+  
+  ![screen](https://user-images.githubusercontent.com/51777024/101928446-99513c00-3bfb-11eb-887d-fa8dba236ac6.png)
+
