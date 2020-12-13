@@ -14,5 +14,6 @@ class Student(models.Model):
 
 	email=models.EmailField(max_length=30)
 
-	
+
+
 

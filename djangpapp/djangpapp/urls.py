@@ -32,5 +32,7 @@ urlpatterns = [
     path('details/<str:name>/<int:age>',views.myDetails),
     
     path('crud/',include('crud.urls')),
+
+    path('empcurd/',include('empcurd.urls')),
  
 ]
