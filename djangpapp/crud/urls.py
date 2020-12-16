@@ -1,14 +1,12 @@
 from django.urls import path
-
-from .views import addstudent
-
-from .views import read
-
+from crud import views
 
 urlpatterns = [
+    path('addstudent/',views.addstudent,name='add'),
+    path('display/',views.display,name='display'),
+    path('update/<int:id>',views.update,name="update"),
+    path('delete/<str:name>',views.delete,name='delete'),
 
-	path('addstudent/',addstudent),
 
-	path('read/',read),
 
 ]

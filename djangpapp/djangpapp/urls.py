@@ -18,6 +18,8 @@ from django.urls import path,include
 from djtot import views
 from djtot import views as v
 
+from django.contrib import admin
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', views.hello), 
@@ -34,5 +36,5 @@ urlpatterns = [
     path('crud/',include('crud.urls')),
 
     path('empcurd/',include('empcurd.urls')),
- 
+
 ]
